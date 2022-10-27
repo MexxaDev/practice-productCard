@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-Card{
+    display: flex;
+    width: 45em;
+    height: 30em;
+    background-color: white;
+    overflow: hidden;
+    align-content: center;
+    box-shadow: 5px 10px 30px 1px rgb(215, 215, 215);
+}
+.ContenedorPhoto{
+    height: 100vh;
+}
+.ContenedorPhoto_photo{
+    width: 100%;
+    height: 75vh;
+    
+}
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em;
+    overflow: hidden;
+}
+h1{
+    width: 7em;
+    font-size: 2em;
+}
+.btn{
+    text-align: center;
+    background-color:hsl(158, 36%, 37%) ;
+    padding: 1em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+.off{
+    color:hsl(158, 36%, 37%);
+    font-size: 2em;
+    margin-right: 0.5em;
+
+}
+.category{
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8em;
+}
+.parrafo{
+    color: hsl(228, 12%, 48%);
+    font-size: 1em;
+    width: 17em;
+    
+}
+.precio{
+    color: hsl(228, 12%, 48%);
+}
+
+
+
+@media (max-width: 600px) {
+    main{
+        margin: 1em;
+    }
+    .contenedor-Card{
+        display: flex;
+        flex-direction: column;
+        width: 35em;
+        height:37em;
+        background-color: white;
+        overflow: hidden;
+        align-content: center;
+        border-radius: 0.4em;
+    }
+    .ContenedorPhoto{
+        height: 38vh;
+        overflow: hidden;
+    }
+    
+    .ContenedorPhoto_photo{
+        width: 100%;
+        height: 60vh;
+        
+    }
+    .parrafo{
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8em;
+        width: 21em;
+    }
+    h1{
+        width: 12em;
+        font-size: 1.5em;
+    }
+    .contenedor-texto{
+        height: 50vh;
+    }
+}
